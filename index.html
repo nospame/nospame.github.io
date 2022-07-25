@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
 <html>
 
@@ -8,17 +8,20 @@
 </head>
 
 <body>
-  <div>
-    <img src="images/banner.jpg" alt="" />
-  </div>
-		<header>
-			<span><img src="images/nospame-avatar.jpeg" alt="avatar"
-					/></span>
+  <header class="flex-container">
+    <div><img src="images/nospame-avatar.jpeg" alt="avatar"
+      /></div>
+      <!-- <div><img src="images/banner.jpg" alt="" /></div> -->
+    </header>
+
+    <div>
+			<span></span>
 			<h1><a href="#">Evan Mapson</a></h1>
 			<p>Software developer,<br>
 				drummer, cat dad,<br>
 				coffee nerd</p>
-		</header>
+      </div>
+
 		<nav id="nav">
 			<ul>
 				<li><a href="#about" class="active">About</a></li>
@@ -60,37 +63,52 @@
 						<p><i>All these things that I've done.</i></p>
 					</header>
 					<div>
-						<article>
-							<a href="https://nospame-capstone-frontend.netlify.app/" class="image" target="_blank"><img
-									src="images/dinner-party-screenshot.png" alt="Dinner Party's Friend app screenshot" /></a>
-							<div>
+				
+              <table>
+                <tr>
+                  <th>Screenshot</th>
+                  <th>Description</th>
+                  <th>Sources</th>
+                </tr>
+                <tr>
+                  <td>
+							      <a href="https://nospame-capstone-frontend.netlify.app/" target="_blank"><img src="images/dinner-party-screenshot.png" alt="Dinner Party's Friend app screenshot" /></a>
+                  </td>
+                  <td>
 								<h4>Dinner Party's Friend</h4>
-								<p>Web app to help plan food-based gatherings by searching recipes by keywords and tags, allowing a
+								  <p>Web app to help plan food-based gatherings by searching recipes by keywords and tags, allowing a
 									user to create an account to save and organize favorite searches and recipes. Vue.js frontend
 									with Bootstrap styling, Ruby on Rails backend with Postgres database.
-									<br />
-									<sub>
+								  </p>
+                </td>
+									<td>
+                <p>
 										<a href="https://github.com/nospame/capstone-dinner-friend-frontend" target="_blank">Source
 											(frontend)</a> |
 										<a href="https://github.com/nospame/capstone-dinner-friend-api" target="_blank">Source
-											(backend)</a></sub>
+											(backend)</a>
 								</p>
-							</div>
-						</article>
-						<article>
-							<a href="https://nospame-not-wordle.netlify.app/" class="image" target="_blank"><img
+              </td>
+							</tr>
+              <tr>
+                <td>
+							<a href="https://nospame-not-wordle.netlify.app/" target="_blank"><img
 									src="images/not-wordle-screenshot.png" alt="(not) Wordle app screenshot" /></a>
-							<div>
+                </td>
+                <td>
 								<h4>(not) Wordle</h4>
 								<p>Clone of everyone's favorite word game from early 2022. Vue.js with Bootstrap
 									styling.
-									<br />
-									<sub>
+                  </p>
+                </td>
+								<td>
+									<p>
 										<a href="https://github.com/nospame/wordle-clone" target="_blank">Source</a>
-									</sub>
-								</p>
-							</div>
-						</article>
+                  </p>
+                </td>
+							</tr>
+
+            </table>
 					</div>
 				</div>
 			</section>
@@ -168,7 +186,20 @@
 </html>
 
 <style>
+  body {
+    font-family: sans-serif;
+  }
+
   img {
     max-width: 100%;
+  }
+
+  header img {
+    max-height: 200px;
+    align-self: center;
+  }
+
+  .flex-container {
+    display: flex;
   }
 </style>
