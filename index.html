@@ -7,21 +7,16 @@
 	<meta charset="utf-8" />
 </head>
 
-<body>
-  <header class="flex-container">
-    <div><img src="images/nospame-avatar.jpeg" alt="avatar"
-      /></div>
-      <!-- <div><img src="images/banner.jpg" alt="" /></div> -->
-    </header>
-
+<body class="center">
+    <!-- <div><img src="images/banner.jpg" alt="" /></div> -->
+  <div class="flex-container">
     <div>
-			<span></span>
-			<h1><a href="#">Evan Mapson</a></h1>
-			<p>Software developer,<br>
-				drummer, cat dad,<br>
-				coffee nerd</p>
-      </div>
-
+      <img src="images/nospame-avatar.jpeg" alt="avatar" id="avatar"/>
+      <h1><a href="#">Evan Mapson</a></h1>
+      <p>Software developer,
+      drummer, cat dad,
+      coffee nerd</p>
+      
 		<nav id="nav">
 			<ul>
 				<li><a href="#about" class="active">About</a></li>
@@ -29,20 +24,19 @@
 				<li><a href="#skills">Skills</a></li>
 				<li><a href="#background">Background</a></li>
 			</ul>
-		
-
+	
 			<ul class="icons">
-				<li><a href="https://github.com/nospame/" class="icon brands fa-github" target="_blank"><span
+				<li><a href="https://github.com/nospame/" target="_blank"><span
 							class="label">Github</span></a>
 				</li>
-				<li><a href="https://www.linkedin.com/in/evan-mapson/" class="icon brands fa-linkedin" target="_blank"><span
+				<li><a href="https://www.linkedin.com/in/evan-mapson/" target="_blank"><span
 							class="label">LinkedIn</span></a></li>
 				<li><a href="mailto:mapson.evan@gmail.com?subject=Contact via Nospame Website"
-						class="icon solid fa-envelope"><span class="label">Email</span></a>
+					><span class="label">Email</span></a>
 				</li>
 			</ul>
     </nav>
-	
+  </div>
 
 		<div id="main">
 			<section id="about">
@@ -68,7 +62,7 @@
                 <tr>
                   <th>Screenshot</th>
                   <th>Description</th>
-                  <th>Sources</th>
+                  <th>Source(s)</th>
                 </tr>
                 <tr>
                   <td>
@@ -112,13 +106,15 @@
 					</div>
 				</div>
 			</section>
-
+      </div>
+    </div>
 			<section id="skills">
 				<div>
 					<h3>Skills & Technologies</h3>
 					<p>
 						Ruby, JavaScript, Python, SQL, HTML, CSS, Ruby on Rails, Vue.js, Bootstrap, PostgreSQL, Relational Databases, Git, GitHub, REST APIs, Linux
 					</p>
+         <small class="back-to-top"><a href="#">Back to Top</a></small>
 				</div>
 			</section>
 
@@ -166,21 +162,19 @@
 						adventure, has an eye for the details, and loves finding solutions to problems you only half-realized were
 						there, I am truly excited to see where this field leads.
 					</p>
+          <small class="back-to-top"><a href="#">Back to Top</a></small>
 				</div>
 			</section>
 
 		
 		</div>
+  </div>
 
 		<footer>
 			<div>
-				<ul>
-					<li>&copy; E. Mapson, 2022. All rights reserved.</li>
-				</ul>
+					<small>&copy; E. Mapson, 2022. All rights reserved.</small>
 			</div>
     </footer>
-
-
 </body>
 
 </html>
@@ -188,18 +182,27 @@
 <style>
   body {
     font-family: sans-serif;
+    max-width: 1280px;
   }
 
   img {
     max-width: 100%;
   }
 
-  header img {
-    max-height: 200px;
-    align-self: center;
+  /* #main {
+    width: 80%;
+  } */
+
+  #avatar {
+    min-width: 96px;
+    max-width: 20%;
   }
 
   .flex-container {
     display: flex;
+  }
+
+  .center {
+    margin: auto;
   }
 </style>
